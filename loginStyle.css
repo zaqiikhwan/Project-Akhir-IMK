@@ -84,7 +84,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 72px;
-    line-height: 140%;
+    line-height: 100%;
 }
 
 .content p {
@@ -114,11 +114,20 @@
 }
 
 .form input {
+    color: var(--ternary);
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
     padding-left: 16px;
     border: 1px solid #D9D9D9;
     width: 602px;
     height: 49px;
     border-radius: 6px;
+}
+
+.form ::placeholder {
+    color: rgba(50, 45, 47, 0.5);
 }
 
 .button {
