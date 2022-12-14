@@ -33,6 +33,7 @@
     --fs-7: 1.5rem;
     --fs-8: 1.4rem;
     --fw-400: 400;
+    --fw-700: 700;
 
     /* Spacing */
     --section-padding: 90px;
@@ -80,14 +81,9 @@ a:hover {
     font-weight: bold;
 }
 
-a:focus {
-    font-weight: bold;
-}
-
 input,
 button {
     background: none;
-    /* border: none; */
     font: inherit;
 }
 
@@ -99,17 +95,7 @@ button {
     cursor: pointer;
 }
 
-ion-icon {
-    pointer-events: none;
-}
-
-address {
-    font-style: normal;
-}
-
 html {
-    font-family: var(--ff-manrope);
-    font-size: 10px;
     scroll-behavior: smooth;
 }
 
@@ -117,11 +103,11 @@ body {
     background-color: var(--krem);
     font-family: var(--ff-Lato);
     color: var(--black-coral);
-    font-size: 1.6rem;
-    line-height: 1.7;
-    height: 300vh;
-    padding-left: 35px;
-    padding-right: 20px;
+    /* font-size: 1.6rem; */
+    /* line-height: 1.7; */
+    /* height: 300vh; */
+    /* padding-left: 35px;
+    padding-right: 20px; */
     padding-inline: 35px;
 }
 
@@ -147,11 +133,11 @@ body {
 
 /* Header */
 
-.logo {
+/* .logo {
     color: var(--blue);
     font-size: 2.6rem;
     font-weight: var(--fw-400);
-}
+} */
 
 .header {
     top: 0;
@@ -171,8 +157,9 @@ body {
     left: 0;
     right: 0;
     margin-bottom: 650px;
-    margin-left: 35px;
-    margin-right: 25px;
+    /* margin-left: 35px;
+    margin-right: 25px; */
+    padding-inline: 35px;
     justify-content: space-between;
     align-items: center;
 }
@@ -218,6 +205,7 @@ body {
     margin-top: 48px;
     padding: 17px 50px;
     border-radius: 30px;
+    font-weight: var(--fw-700);
     background-color: var(--blue);
     color: var(--white);
     border: none;
@@ -234,7 +222,7 @@ body {
 .container-2 {
     display: flex;
     justify-content: space-between;
-    margin-top: 128px;
+    margin-top: 189px;
     align-items: center;
 }
 
@@ -244,14 +232,19 @@ body {
 }
 
 .h1-text {
-    font-size: 5.8rem;
     color: var(--blue);
+    font-size: 72px;
+    font-weight: var(--fw-700);
+    line-height: 101px;
+    letter-spacing: 0em;
 }
 
 .h3-text {
+    margin-top: 15px;
     font-size: 24px;
-    font-weight: 400px;
-    padding-top: 16px;
+    font-weight: var(--fw-400);
+    color: var(--ternary);
+    line-height: 33.6px;
 }
 
 .img-1 {

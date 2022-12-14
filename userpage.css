@@ -1,0 +1,237 @@
+:root {
+    /* Variable Typography */
+    --krem: #faf7ef;
+    --blue: #2a29e6;
+    --black: #11093e;
+    --ternary: #322D2F;
+    --white: hsla(0, 0%, 100%, 1);
+    --ff-lato: "Lato", sans-serif;
+    --fw-700: 700;
+    --fw-400: 400;
+}
+
+body {
+    background-color: var(--krem);
+    padding-inline: 36px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-lato);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+button {
+    background: none;
+    font: inherit;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: hsl(0, 0%, 98%);
+}
+
+::-webkit-scrollbar-thumb {
+    padding: 2px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 80%);
+}
+
+/* transisi warna dari awal thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.container-navbar {
+    border-radius: 0px 0px 25px 25px;
+    background-color: var(--krem);
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin-bottom: 650px;
+    /* kasih space kanan dan kiri dari navbar */
+    /* margin-left: 35px;
+    margin-right: 25px; */
+    padding-inline: 36px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    gap: 48px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* css buat margin di logo */
+/* .logo {
+    margin-top: 36px;
+    margin-left: 12px;
+} */
+
+.button {
+    margin-top: 10px;
+}
+
+.btn-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: var(--blue);
+    color: var(--blue);
+    margin-right: 20px;
+    /* lebar dari button */
+    width: 110px;
+    border-radius: 24px;
+
+}
+
+.text-btn {
+    margin-left: 17px;
+    margin-right: 12px;
+    /* background-color: #11093e; */
+    /* padding-bottom: 18px; */
+}
+
+.btn-1:hover {
+    background-color: #dddddd;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 189px;
+    align-items: center;
+}
+
+.flex-left {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.h1-text {
+    color: var(--blue);
+    font-size: 72px;
+    font-weight: var(--fw-700);
+    line-height: 101px;
+    letter-spacing: 0em;
+}
+
+.h3-text {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: var(--fw-400);
+    color: var(--ternary);
+    line-height: 33.6px;
+}
+
+.img-1 {
+    display: flex;
+    width: 500px;
+    height: auto;
+}
+
+.btn-daftar {
+    margin-top: 48px;
+    padding: 17px 50px;
+    font-weight: var(--fw-700);
+    line-height: 22.4px;
+    border-radius: 30px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+}
+
+.btn-daftar:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #2a29e6;
+}
+
+.container-3 {
+    margin-top: 64px;
+    padding: 60px 32px;
+    border-color: #11093e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    width: 1450px;
+    justify-content: space-between;
+}
+
+.flex-left-2 {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.flex-right-2 {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    /* margin-right: 50px; */
+    /* height: 83px; */
+}
+
+.mentor-1, .mentor-2, .mentor-3 {
+    display: flex;
+}
+
+.ket-mentor {
+    margin-left: 8px;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.nama-mentor {
+    /* font-family: Lato; */
+    font-size: 16px;
+    font-weight: var(--fw-700);
+    line-height: 22px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+}
+
+.jabatan-mentor {
+    font-size: 16px;
+    font-weight: var(--fw-400);
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.panah-kanan {
+    border: none;
+}
