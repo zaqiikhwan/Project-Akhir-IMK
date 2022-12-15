@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" /> -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
 
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@700&display=swap" rel="stylesheet" />
@@ -27,10 +26,24 @@
                         <ul>
                             <li class="item">
                                 <!-- if in section == true, bold/strong -->
-                                <a href="#home">Beranda</a>
-                                <a href="#populer">Populer</a>
-                                <a href="#topik">Topik</a>
-                                <a href="">Kontak</a>
+                                <a class="nav-link" href="#home">Beranda</a>
+                                <a class="nav-link" href="#populer">Populer</a>
+                                <a class="nav-link" href="#topik">Topik</a>
+                                <a class="nav-link" href="#kontak">Kontak</a>
+
+
+                                <!-- <div class="nav-link-1">
+                                    <a href="#home">Beranda</a>
+                                </div>
+                                <div class="nav-link-2" onClick="changeStyle()">
+                                    <a href="#populer">Populer</a>
+                                </div>
+                                <div class="nav-link">
+                                    <a href="#topik">Topik</a>
+                                </div>
+                                <div class="nav-link">
+                                    <a href="#kontak">Kontak</a>
+                                </div> -->
                             </li>
                         </ul>
                     </div>
@@ -43,7 +56,10 @@
         </header>
 
         <main>
-            <div id="home" class="container-2">
+            <div id="home" class="navbar-home">
+                
+            </div>
+            <div class="container-2">
                 <div class="flex-left">
                     <h1 class="h1-text">
                         Temukan Mentor
@@ -79,6 +95,7 @@
                     <img src="/assets/image 9.svg" alt="" />
                 </div>
             </div>
+
             <h2 id="populer" class="part-3">Terpopuler</h2>
             <div class="card-populer">
                 <div class="card">
@@ -134,6 +151,7 @@
                 </div>
             </div>
 
+            <!-- Komponen Card -->
             <div class="card-populer">
                 <div class="card">
                     <div class="head-card">
@@ -187,12 +205,17 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Tombol Selanjutnya -->
             <div class="selanjutnya">
                 <button class="btn-next">Lebih Banyak</button>
             </div>
+            
+            <div id="topik" class="tempat-navbar">
+            </div>
 
             <!-- Komponen Topik -->
-            <div id="topik" class="container-topik">
+            <div class="container-topik">
                 <h2 class="text-topic">Pilihan Topik</h2>
                 <div class="jenis-topik">
                     <button class="box-topik">Pemasaran Konvensional</button>
@@ -215,6 +238,7 @@
                 </div>
             </div>
 
+            <!-- Komponer Partner -->
             <div class="container-partner">
                 <h2 class="text-partner">Pilihan Partner Kami</h2>
 
@@ -331,6 +355,11 @@
                 </div>
             </div>
 
+            <div id="kontak" class="navbar-kontak">
+
+            </div>
+
+            <!-- Komponen Promote -->
             <div class="container-promote">
                 <img class="picture-promote" src="/assets/Rectangle 60.png" alt="" />
                 <div class="ket-promote">
@@ -343,6 +372,7 @@
             </div>
         </main>
 
+        <!-- Komponen Footer -->
         <footer class="footer-container">
             <div class="footer-left">
                 <a href="#">
@@ -373,15 +403,7 @@
                 </div>
             </div>
         </footer>
-        <!-- <footer>
-            <div class="logo-footer">
-                <a href="/"><img src="assets/mentor.in - white.png" alt="" /></a>
-
-            </div>
-        </footer> -->
 
         <script src="index.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
