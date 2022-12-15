@@ -3,7 +3,7 @@
     --krem: #faf7ef;
     --blue: #2a29e6;
     --black: #11093e;
-    --ternary: #322D2F;
+    --ternary: #322d2f;
     --white: hsla(0, 0%, 100%, 1);
     --ff-lato: "Lato", sans-serif;
     --fw-700: 700;
@@ -12,7 +12,7 @@
 
 body {
     background-color: var(--krem);
-    padding-inline: 36px;
+    padding-inline: 64px;
 }
 
 html {
@@ -83,7 +83,7 @@ button {
     /* kasih space kanan dan kiri dari navbar */
     /* margin-left: 35px;
     margin-right: 25px; */
-    padding-inline: 36px;
+    padding-inline: 64px;
     justify-content: space-between;
     align-items: center;
 }
@@ -93,7 +93,6 @@ button {
     display: flex;
     justify-content: space-around;
 }
-
 
 /* css buat margin di logo */
 /* .logo {
@@ -115,7 +114,6 @@ button {
     /* lebar dari button */
     width: 110px;
     border-radius: 24px;
-
 }
 
 .text-btn {
@@ -186,7 +184,8 @@ button {
     border-radius: 16px;
     display: flex;
     align-items: center;
-    width: 1450px;
+    /* gap: 20px;    */
+    /* width: 1380px; */
     justify-content: space-between;
 }
 
@@ -194,18 +193,20 @@ button {
     font-family: "Sora";
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .flex-right-2 {
     display: flex;
-    gap: 32px;
+    gap: 24px;
     align-items: center;
     /* margin-right: 50px; */
     /* height: 83px; */
 }
 
-.mentor-1, .mentor-2, .mentor-3 {
+.mentor-1,
+.mentor-2,
+.mentor-3 {
     display: flex;
 }
 
@@ -234,4 +235,110 @@ button {
 
 .panah-kanan {
     border: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-Lato);
+    background-color: var(--bgLight);
+}
+
+a {
+    font-family: var(--ff-Lato);
+    color: inherit;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-container {
+    background-color: var(--bgDark);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    margin-top: 96px;
+    padding: 48px 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-left img {
+    max-width: 136px;
+}
+.footer-left p {
+    color: var(--bgLight);
+}
+.footer-left span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.footer-center {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-center a {
+    color: var(--bgLight);
+}
+.footer-center a:hover {
+    color: var(--primary);
+}
+
+.footer-right {
+    width: 35%;
+}
+.footer-right h3 {
+    color: var(--bgLight);
+    margin: 0;
+}
+.footer-right p {
+    color: var(--bgLight);
+    font-weight: 400;
+}
+.footer-right span {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.footer-icons {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.footer-icons a {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-color: var(--primary);
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--bgLight);
+    text-align: center;
+    line-height: 32px;
+}
+
+.footer-icons a:hover {
+    background-color: var(--bgLight);
+    color: var(--primary);
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
 }
