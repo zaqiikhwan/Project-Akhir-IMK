@@ -15,6 +15,7 @@ body {
     box-sizing: border-box;
     font-family: var(--ff-Lato);
     background-color: var(--bgLight);
+    scroll-behavior: smooth;
 }
 
 a {
