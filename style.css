@@ -73,11 +73,10 @@ a {
     text-decoration: none;
 }
 
-a:hover, .nav-link.active {
+a:hover,
+.nav-link.active {
     font-weight: bold;
 }
-
-
 
 input,
 button {
@@ -308,7 +307,7 @@ body {
 
 .card {
     width: 324px;
-    height: 310px;
+    /* height: 310px; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px 8px;
 }
@@ -327,7 +326,7 @@ body {
     padding-left: 16px;
     padding-right: 10px;
     padding-top: 12px;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     font-family: var(--ff-Lato);
 }
 
@@ -378,16 +377,11 @@ body {
 }
 
 .container-topik {
-    /* width: 1512px; */
-    /* position: absolute; */
-    /* left: 0px;
-    right: 0px; */
     height: 320px;
     background-color: #2a29e6;
     margin-top: 100px;
     top: 20px;
     margin-inline: -65px;
-    /* z-index: -1; */
 }
 
 .tempat-navbar {
@@ -395,7 +389,6 @@ body {
 }
 
 .text-topic {
-    /* margin-top: 190px; */
     padding-top: 32px;
     margin-left: 65px;
     color: #faf7ef;
@@ -405,9 +398,6 @@ body {
 }
 
 .jenis-topik {
-    /* margin-left: 60px; */
-    /* margin-right: 35px;
-    margin-left: 35px; */
     margin-inline: 65px;
     display: flex;
     flex-direction: row;
@@ -481,7 +471,7 @@ body {
 
 .card-partner {
     width: 324px;
-    height: 310px;
+    /* height: 310px; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px 8px;
 }
