@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="profileStyle.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+        <title>mentor.in</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="/" class="logo">
+                            <img src="/assets-branch-login/Logo 1.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="list-menu">
+                        <ul>
+                            <li class="item">
+                                <a href="">Beranda</a>  
+                                <a href="">Populer</a>
+                                <a href="">Topik</a>
+                                <a href="">Kontak</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="profile" onclick="toggleMenu()">
+                        <div class="profile-bar">
+                            <a href="#">Galih</a>
+                            <img src="/assets-branch-login/PP kecil.svg" class="profile-picture">
+                        </div>
+                        <div class="sub-menu-wrap" id="subMenu">
+                            <div class="sub-menu">
+                                <!-- Set href to Profile Page -->
+                                <a href="#">Profil</a>
+                            </div>
+                            <div class="sub-menu">
+                                <!-- Set href to Homepage -->
+                                <a href="#">Keluar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="title-page">
+                <h1>Profil</h1>
+            </div>
+            <div class="photo-profile">
+                <div class="box">
+                    <img src="/assets-branch-login/PP besar.svg" alt="">
+                </div>
+                <div class="edit-photo">
+                    <a href=""><img src="/assets-branch-login/edit-icon.svg" alt=""></a>
+                    <a href="">Edit</a>
+                </div>
+            </div>
+            <div class="form">
+                <label for="nama-lengkap">Nama Lengkap</label>
+                <input type="text" value="Achmad Galih Wicaksana">
+                <label for="email">Email</label>
+                <input type="text" value="galihbisnis@gmail.com">
+                <label for="Password">Kata Sandi</label>
+                <div class="pass">
+                    <input type="password" placeholder="Masukkan Kata Sandimu" required id="password" value="galihwicaksana">
+                    <i class="bi bi-eye-slash" id="togglePassword"></i>
+                </div>
+                <label for="domisili">Domisili</label>
+                <input type="text" value="Kota Malang">
+                <label for="jenis-usaha">Jenis Usaha</label>
+                <input type="text" value="Cuci Mobil">
+                <label for="topik-favorit">Topik Favorit</label>
+                <input type="text" value="Pemasaran Digital">
+                <label for="permasalahan-bisnis">Permasalahan Bisnis</label>
+                <span style="background-color: #FAF7EF;" class="textarea" role="textbox" contenteditable>
+                    <div>
+                        Saya sedang ingin untuk memperluas target pasar untuk usaha cuci mobil saya melalui promosi di media sosial seperti Instagram, TikTok hingga YouTube
+                    </div>
+                </span>
+            </div>
+            <div class="button">
+                <a href="">Simpan</a>
+            </div>
+        </div>
+        <footer class="footer-container">
+            <div class="footer-left">
+                <a href="#">
+                    <img src="/assets-branch-login/Logo white.svg" alt="">
+                </a>
+                <div>
+                    <p class="footer-company-name">Copyright © 2022 by <span>mentor.in</span></p>
+                </div>
+            </div>
+    
+            <!-- set href to each section -->
+            <div class="footer-center">
+                <a href="#">Beranda</a>
+                <a href="#">Populer</a>
+                <a href="#">Topik</a>
+                <a href="#">Kontak</a>
+            </div>
+    
+            <div class="footer-right">
+                <h3>Tentang Kami</h3>
+                <p>
+                    <span>mentor.in</span> adalah sebuah startup yang mempunyai visi untuk memberikan kesempatan yang lebar
+                    bagi para pengusaha muda khususnya di desa untuk menemukan mentor bisnis terbaik mereka melalui platform
+                    kami.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        <script src="profile.js"></script>
+    </body>
+</html>
