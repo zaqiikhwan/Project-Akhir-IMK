@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sora:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="loginStyle.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
         <title>mentor.in</title>
     </head>
@@ -27,13 +28,11 @@
                     <h1>Masuk</h1>
                     <p>Masukkan email dan kata sandimu, ya</p>
                     <div class="form">
-                        <label for="Username" aria-autocomplete="list">Email</label>
-                        <form action="" autocomplete="galih@gmail.com" method="post">
-                            <input type="email" placeholder="Masukkan Emailmu" required>
-                        </form>
+                        <label for="email" aria-autocomplete="list">Email</label>
+                        <input type="email" placeholder="Masukkan Emailmu" id="email" required value="galihbisnis@gmail.com">
                         <label for="Password">Kata Sandimu</label>
                     <div class="pass">
-                        <input type="password" placeholder="Masukkan Kata Sandimu" autocomplete="galih123" required id="password">
+                        <input type="password" placeholder="Masukkan Kata Sandimu" required value="galihwicaksana" id="password">
                         <i class="bi bi-eye-slash" id="togglePassword"></i>
                     </div>   
                     </div>
