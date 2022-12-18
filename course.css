@@ -32,6 +32,7 @@ a {
 }
 
 .item {
+    font-family: "Sora";
     gap: 48px;
     display: flex;
     justify-content: space-around;

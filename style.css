@@ -151,7 +151,8 @@ body {
     z-index: 4;
 } */
 
-.container-navbar {
+/* desain nav satu */
+.container-navbar-comment {
     background-color: var(--krem);
     /* background-color: red; */
     position: fixed;
@@ -167,19 +168,32 @@ body {
     align-items: center;
 }
 
+.container-navbar {
+    background-color: var(--bgLight);
+    /* background-color: red; */
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding-inline: 64px;
+    width: 1391px;
+    height: 50px;
+    padding-top: 36px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
 .item {
-    margin-left: 100px;
-    gap: 50px;
+    margin-left: 138px;
+    gap: 48px;
     display: flex;
     justify-content: space-around;
 }
 
-.button {
-    margin-right: 10px;
-}
-
 .btn-1 {
-    /* border: 2px; */
     border-color: var(--blue);
     color: var(--blue);
     padding: 8px 28px;

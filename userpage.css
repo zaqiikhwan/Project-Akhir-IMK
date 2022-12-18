@@ -23,7 +23,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--krem);
+    background-color: var(--bgLight);
     /* margin-inline: 64px; */
     font-family: var(--ff-Lato);
 }
@@ -77,25 +77,30 @@ button {
 
 .container-navbar {
     /* border-radius: 0px 0px 25px 25px; */
-    background-color: var(--krem);
+    background-color: var(--bgLight);
+    /* background-color: #100d23; */
     position: fixed;
     display: flex;
     top: 0;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     right: 0;
-    margin-bottom: 650px;
+    /* margin-bottom: 650px; */
     /* kasih space kanan dan kiri dari navbar */
     /* margin-left: 35px;
     margin-right: 25px; */
     /* margin-inline: 64px; */
     padding-inline: 64px;
+    width: 1391px;
+    height: 50px;
+    padding-top: 36px;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
 }
 
 .item {
+    font-family: "Sora";
     gap: 48px;
     display: flex;
     justify-content: space-around;
