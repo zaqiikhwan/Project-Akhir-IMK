@@ -107,6 +107,53 @@ button {
     margin-left: 12px;
 } */
 
+.profile {
+    position: relative;
+}
+
+.profile-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid var(--primary);
+}
+
+.profile-bar a {
+    padding: 8px 12px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    flex-direction: column;
+    border: 1px solid var(--primary);
+    border-radius: 16px;
+    background-color: var(--bgLight);
+    gap: 8px;
+    padding: 16px 96px 16px 16px;
+    margin-top: 4px;
+    margin-left: -64px;
+    display: none;
+}
+
+.sub-menu-wrap.open-menu {
+    display: flex;
+}
+
+.sub-menu {
+    color: var(--primary);
+    display: inline-flex;
+}
+
+.sub-menu img {
+    padding-right: 8px;
+}
+
+.sub-menu a:hover {
+    font-weight: 600;
+}
+
 .button {
     margin-top: 10px;
 }
@@ -268,6 +315,10 @@ body {
     background-color: var(--bgLight);
 } */
 
+.space-course {
+    margin-bottom: 27px;
+}
+
 .last-course-container {
     display: flex;
     flex-direction: column;
@@ -278,7 +329,7 @@ body {
 .part-last-course {
     font-weight: 700;
     font-size: 32px;
-    /* margin-top: 64px; */
+    margin-top: 36px;
     /* margin-bottom: 32px; */
     /* margin-inline: 64px; */
     /* padding-top: 96px; */
@@ -304,6 +355,7 @@ body {
 }
 
 .card-last-course {
+    cursor: pointer;
     width: 324px;
     height: 310px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -318,6 +370,10 @@ body {
     height: 310px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px 8px;
+}
+
+.card:hover, .card-last-course:hover {
+    background: #d9d9d9;
 }
 
 .card-populer {
@@ -456,10 +512,6 @@ body {
     text-align: center;
 }
 
-.box-topik:hover {
-    background: #eeeeee;
-}
-
 .box-topik-2 {
     border: none;
     color: var(--blue);
@@ -478,8 +530,8 @@ body {
     text-align: center;
 }
 
-.box-topik-2:hover {
-    background: #eeeeee;
+.box-topik:hover, .box-topik-2:hover {
+    background: #d9d9d9;
 }
 
 .selanjutnya {

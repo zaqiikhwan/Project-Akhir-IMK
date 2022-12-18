@@ -312,6 +312,10 @@ body {
     border-radius: 8px 8px;
 }
 
+.card:hover {
+    background: #d9d9d9;
+}
+
 .head-card img {
     width: 100%;
     height: 172px;
@@ -423,10 +427,6 @@ body {
     text-align: center;
 }
 
-.box-topik:hover {
-    background: #eeeeee;
-}
-
 .box-topik-2 {
     border: none;
     color: var(--blue);
@@ -445,8 +445,8 @@ body {
     text-align: center;
 }
 
-.box-topik-2:hover {
-    background: #eeeeee;
+.box-topic:hover, .box-topik-2:hover {
+    background: #d9d9d9;
 }
 
 .container-partner {
@@ -474,6 +474,10 @@ body {
     /* height: 310px; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px 8px;
+}
+
+.card-partner:hover {
+    background: #d9d9d9;
 }
 
 .container-promote {

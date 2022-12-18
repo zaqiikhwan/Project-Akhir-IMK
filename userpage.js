@@ -10,3 +10,9 @@ if (links.length) {
         });
     });
 }
+
+let subMenu = document.getElementById("subMenu");
+
+toggleMenu = () => {
+    subMenu.classList.toggle("open-menu");
+};

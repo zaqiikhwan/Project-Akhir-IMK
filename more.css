@@ -106,13 +106,13 @@ nav {
 }
 
 .card-populer {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 32px;
-    padding-bottom: 8px;
-    padding-inline: 2px;
+    /* padding-bottom: 8px; */
+    /* padding-inline: 2px; */
     gap: 32px;
 }
 

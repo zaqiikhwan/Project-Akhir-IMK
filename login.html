@@ -27,19 +27,21 @@
                     <h1>Masuk</h1>
                     <p>Masukkan email dan kata sandimu, ya</p>
                     <div class="form">
-                        <label for="Username">Email</label>
-                        <input type="text" placeholder="Masukkan Emailmu" required>
+                        <label for="Username" aria-autocomplete="list">Email</label>
+                        <form action="" autocomplete="galih@gmail.com" method="post">
+                            <input type="email" placeholder="Masukkan Emailmu" required>
+                        </form>
                         <label for="Password">Kata Sandimu</label>
                     <div class="pass">
-                        <input type="password" placeholder="Masukkan Kata Sandimu" required id="password">
+                        <input type="password" placeholder="Masukkan Kata Sandimu" autocomplete="galih123" required id="password">
                         <i class="bi bi-eye-slash" id="togglePassword"></i>
                     </div>   
                     </div>
                     <div class="button">
-                        <a href="">Masuk</a>
+                        <a href="/userpage.html">Masuk</a>
                     </div>
                     <div class="alterlogin">
-                        <p>Belum punya akun? <a href="">Daftar</a></p>
+                        <p>Belum punya akun? <a href="/daftar.html">Daftar</a></p>
                     </div>
                 </div>
             </div>
