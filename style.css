@@ -111,6 +111,9 @@ body {
     /* padding-inline: 35px; */
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
 /* untuk lebar scrollbar navigation */
 /* ::-webkit-scrollbar {
     width: 20px;
@@ -178,9 +181,10 @@ body {
     left: 0;
     right: 0;
     padding-inline: 64px;
-    width: 1391px;
+    /* width: 1391px; */
     height: 50px;
     padding-top: 36px;
+    padding-bottom: 16px;
     justify-content: space-between;
     align-items: center;
     z-index: 2;
@@ -459,7 +463,8 @@ body {
     text-align: center;
 }
 
-.box-topic:hover, .box-topik-2:hover {
+.box-topic:hover,
+.box-topik-2:hover {
     background: #d9d9d9;
 }
 
