@@ -378,7 +378,7 @@ body {
     border-radius: 8px 8px;
 }
 
-.card:hover, .card-last-course:hover {
+.card:hover, .card-last-course:hover, .card-partner:hover {
     background: #d9d9d9;
 }
 

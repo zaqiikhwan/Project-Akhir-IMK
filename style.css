@@ -330,7 +330,7 @@ body::-webkit-scrollbar {
     border-radius: 8px 8px;
 }
 
-.card:hover {
+.card:hover, .body-card:hover {
     background: #d9d9d9;
 }
 
